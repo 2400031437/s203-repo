@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+</head>
+<body>
+
+    <center>
+    <form name="studentForm" action="" method="post">
+        <table style="width: 500px;">
+            <caption><h2>STUDENT REGISTRATION FORM</h2></caption>
+
+             <tr>
+                <td colspan="2">&nbsp;</td>
+                <td align="center">
+                    <input type="image" src="flower.jpg" height="100" width="80px"> 
+                </td>
+            </tr>
+            <tr>
+                <td><label for="name">Full Name</label></td>
+                <td><b>:</b></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="pwd">Password</label></td>
+                <td><b>:</b></td>
+                <td><input type="password" id="pwd" name="pwd" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><b>:</b></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone</label></td>
+                <td><b>:</b></td>
+                <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td><b>:</b></td>
+                <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td><b>:</b></td>
+                <td>
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <input type="radio" name="gender" value="male" required> Male <br>
+                        <input type="radio" name="gender" value="female"> Female <br>
+                        <input type="radio" name="gender" value="other"> Other
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Hobbies</label>
+                </td>
+                <td><b>:</b></td>
+                <td>
+                    <fieldset>
+                        <legend>Hobbies</legend>
+                        <input type="radio" name="Hobbies" value="Reading Books">Reading Books <br>
+                        <input type="radio" name="Hobbies" value="Playing games">Playing games <br>
+                        <input type="radio" name="Hobbies" value="Drawing">singing <br>
+                        <input type="radio" name="Hobbies" value="other">Other
+                    </fieldset>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="course">Course</label></td>
+                <td><b>:</b></td>
+                <td>
+                    <select name="course" id="course" required>
+                        <option value="">--Select--</option>
+                        <option value="btech">B.Tech</option>
+                        <option value="bsc">B.Sc</option>
+                        <option value="bca">BCA</option>
+                        <option value="mba">MBA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td><b>:</b></td>
+                <td>
+                    <textarea name="address" id="address" rows="2" required></textarea>
+                </td>
+            </tr>
+
+           
+            <tr>
+                <td><label for="agree">Agree to Terms</label></td>
+                <td><b>:</b></td>
+                <td>
+                    <input type="checkbox" name="agree" id="agree" required> I agree to the terms & conditions
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td colspan="2">
+                    <input type="submit" value="SUBMIT">
+                    <input type="reset" value="RESET">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </center>
+
+</body>
+</html>

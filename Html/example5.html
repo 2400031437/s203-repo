@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Layout 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "search search right"
+                "left middle right";
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto 50px 400px;
+            gap: 2px;
+            height: 100vh;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: bisque;
+            padding: 2px;
+        }
+
+        .search {
+            grid-area: search;
+            background-color: cyan;
+            padding: 5px;
+        }
+
+        .right {
+            grid-area: right;
+            background-color: lime;
+            padding: 5px;
+        }
+
+        .left {
+            grid-area: left;
+            background-color: blue;
+            color: white;
+            padding: 5px;
+        }
+
+        .middle {
+            grid-area: middle;
+            background-color: yellow;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sample Layout 1</h2>
+    <div class="container">
+        <div class="header">HEADER</div>
+        <div class="search">SEARCH</div>
+        <div class="right">RIGHT SIDE BAR</div>
+        <div class="left">LEFT SIDE BAR</div>
+        <div class="middle">MIDDLE</div>
+    </div>
+</body>
+</html>
